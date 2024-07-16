@@ -17,11 +17,11 @@ class Solution {
         ListNode curr=dummy;
         while(t1!=null || t2!=null)
         {
-            int s=c;
-            if(t1!=null) s=s+t1.val;
-            if(t2!=null) s=s+t2.val;
-            ListNode newnode=new ListNode(s%10);
-            c=s/10;
+            int sum=c;
+            if(t1!=null) sum=sum+t1.val;
+            if(t2!=null) sum=sum+t2.val;
+            ListNode newnode=new ListNode(sum%10);
+            c=sum/10;
             curr.next=newnode;
             curr=curr.next;
             if(t1!=null) t1=t1.next;
