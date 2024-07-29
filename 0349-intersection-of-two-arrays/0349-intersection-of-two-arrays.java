@@ -8,7 +8,7 @@ class Solution {
             hm.put(nums1[i],hm.getOrDefault(nums1[i],0)+1);
         for(int i:nums2)
         {
-            if(hm.containsKey(i) && hm.get(i)>0)
+            if(hm.containsKey(i) )
                 s.add(i);
         }
         int n=s.size();
