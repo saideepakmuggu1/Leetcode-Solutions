@@ -7,7 +7,7 @@ class Solution {
             int j = i + 1;
             int k = j + 1;
             while (j < n - 1) {
-                k = j + 1;  // Reset k for each new j
+                k = j + 1; 
                 while (k < n) {
                     if (nums[i] < nums[j] && nums[j] > nums[k]) {
                         int s = nums[i] + nums[j] + nums[k];
