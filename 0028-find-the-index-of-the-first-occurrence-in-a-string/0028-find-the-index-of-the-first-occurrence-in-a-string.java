@@ -2,9 +2,8 @@ class Solution
 {
     public int strStr(String haystack, String needle)
     {
-        int n=haystack.length();
-        int m=needle.length();
-        if(m>n)
+        
+        if(needle.length()>haystack.length())
         {
              return -1;
         }
