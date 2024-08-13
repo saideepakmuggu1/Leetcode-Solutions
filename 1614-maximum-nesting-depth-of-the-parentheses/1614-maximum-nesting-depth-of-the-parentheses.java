@@ -9,11 +9,11 @@ class Solution {
             if(ch == '(' )
             {
                 cnt++;
-                 maxi=Math.max(maxi,cnt);
+                
             }
             else if(ch == ')')
             {
-    
+                 maxi=Math.max(maxi,cnt);
                 cnt--;
             }
             else
